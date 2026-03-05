@@ -75,7 +75,7 @@ p{margin-bottom:1rem}
 .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(26,26,46,.65);z-index:1}
 .hero .container{position:relative;z-index:2}
 .hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.hero h1{margin-bottom:1.25rem}
+.hero h1{margin-bottom:1.25rem;color:var(--white)}
 .hero p{font-size:1.2rem;color:rgba(255,255,255,.8);max-width:600px;margin-bottom:2rem}
 .hero .btn-group{margin-top:.5rem}
 
