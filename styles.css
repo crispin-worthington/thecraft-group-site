@@ -98,7 +98,7 @@ p{margin-bottom:1rem}
 /* ===== COMPANY CARD ===== */
 .company-card{border:2px solid var(--gray-light);border-radius:var(--radius);padding:2.5rem;transition:var(--transition);text-align:center}
 .company-card:hover{border-color:var(--primary);box-shadow:var(--shadow-hover);transform:translateY(-4px)}
-.company-card .company-logo{height:60px;width:auto;margin:0 auto 1rem;display:block;object-fit:contain}
+.company-card .company-logo{height:120px;width:auto;margin:0 auto 1.5rem;display:block;object-fit:contain}
 /* Craft Electric brand: slate blue/gold #f5a623, dark #1f2328 */
 .brand-craft-electric{--brand:#1f2328;--brand-accent:#f5a623}
 /* Brink Landscaping brand: green #30813f, dark green #102c15, copper #c76a2a */
