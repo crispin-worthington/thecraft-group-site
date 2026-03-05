@@ -52,9 +52,11 @@ p{margin-bottom:1rem}
 /* ===== NAV ===== */
 .nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--gray-light);padding:.75rem 0}
 .nav .container{display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-size:1.35rem;font-weight:900;color:var(--dark);letter-spacing:-.5px}
+.nav-logo{font-size:1.35rem;font-weight:900;color:var(--dark);letter-spacing:-.5px;display:flex;align-items:center}
 .nav-logo .craft{color:var(--primary)}
-.nav-logo-img{height:32px;width:auto;display:inline-block;vertical-align:middle;margin-right:.5rem}
+.nav-close{display:none}
+.nav-logo-img{height:48px;width:auto;display:inline-block;vertical-align:middle;margin-right:.75rem}
+@media(max-width:768px){.nav-logo-img{height:36px}}
 .nav-links{display:flex;gap:1.5rem;align-items:center}
 .nav-links a{color:var(--dark);font-weight:600;font-size:.95rem;position:relative}
 .nav-links a:hover{color:var(--primary)}
@@ -65,12 +67,14 @@ p{margin-bottom:1rem}
   .nav-links{position:fixed;top:0;right:-100%;width:70%;max-width:300px;height:100vh;background:var(--white);flex-direction:column;padding:5rem 2rem 2rem;gap:1.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.1);transition:right .3s ease;z-index:1001}
   .nav-links.open{right:0}
   .nav-toggle{display:block;z-index:1002}
-  .nav-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer}
+  .nav-close{display:block;position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer}
 }
 
 /* ===== HERO ===== */
 .hero{background:var(--dark);color:var(--white);padding:6rem 0 5rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,77,106,.15) 0%,transparent 70%);border-radius:50%}
+.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(26,26,46,.65);z-index:1}
+.hero .container{position:relative;z-index:2}
+.hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero h1{margin-bottom:1.25rem}
 .hero p{font-size:1.2rem;color:rgba(255,255,255,.8);max-width:600px;margin-bottom:2rem}
 .hero .btn-group{margin-top:.5rem}
@@ -94,6 +98,11 @@ p{margin-bottom:1rem}
 /* ===== COMPANY CARD ===== */
 .company-card{border:2px solid var(--gray-light);border-radius:var(--radius);padding:2.5rem;transition:var(--transition);text-align:center}
 .company-card:hover{border-color:var(--primary);box-shadow:var(--shadow-hover);transform:translateY(-4px)}
+.company-card .company-logo{height:60px;width:auto;margin:0 auto 1rem;display:block;object-fit:contain}
+/* Craft Electric brand: slate blue/gold #f5a623, dark #1f2328 */
+.brand-craft-electric{--brand:#1f2328;--brand-accent:#f5a623}
+/* Brink Landscaping brand: green #30813f, dark green #102c15, copper #c76a2a */
+.brand-brink{--brand:#30813f;--brand-accent:#c76a2a}
 .company-card .company-name{font-size:1.6rem;font-weight:800;margin-bottom:.5rem}
 .company-card .company-location{color:var(--gray);font-size:.95rem;margin-bottom:1rem}
 .company-card p{color:#555}
@@ -164,9 +173,9 @@ textarea{resize:vertical;min-height:120px}
 .leader-info .role{color:var(--primary);font-weight:700;margin-bottom:1rem}
 
 /* ===== PAGE HERO (smaller) ===== */
-.page-hero{background:var(--dark);color:var(--white);padding:4rem 0 3rem;text-align:center}
-.page-hero h1{margin-bottom:.75rem}
-.page-hero p{color:rgba(255,255,255,.8);font-size:1.15rem;max-width:600px;margin:0 auto}
+.page-hero{background:var(--dark);color:var(--white);padding:5rem 0 4rem;text-align:center}
+.page-hero h1{margin-bottom:.75rem;font-size:clamp(2.4rem,6vw,3.8rem)}
+.page-hero p{color:rgba(255,255,255,.8);font-size:1.25rem;max-width:640px;margin:0 auto}
 
 /* ===== TEASER ===== */
 .teaser{border:2px dashed var(--gray-light);border-radius:var(--radius);padding:3rem;text-align:center;color:var(--gray)}
