@@ -52,7 +52,7 @@ p{margin-bottom:1rem}
 /* ===== NAV ===== */
 .nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--gray-light);padding:.75rem 0}
 .nav .container{display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-size:1.35rem;font-weight:900;color:var(--dark);letter-spacing:-.5px;display:flex;align-items:center}
+.nav-logo{font-size:1.8rem;font-weight:900;color:var(--dark);letter-spacing:-.5px;display:flex;align-items:center}
 .nav-logo .craft{color:var(--primary)}
 .nav-close{display:none}
 .nav-logo-img{height:48px;width:auto;display:inline-block;vertical-align:middle;margin-right:.75rem}
