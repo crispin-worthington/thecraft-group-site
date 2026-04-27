@@ -1,167 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-  <title>Contact — The Craft Group</title>
-  <meta name="description" content="Get in touch with The Craft Group. Whether you're a tradesperson, a business owner, or just curious — we'd love to hear from you.">
-  <meta property="og:title" content="Contact — The Craft Group">
-  <meta property="og:description" content="Reach out to The Craft Group.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8" />
+<title>Contact — The Craft Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #1a1814; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  a:hover { opacity: 0.85; transition: opacity 0.2s ease; }
+</style>
 </head>
 <body>
-
-  <nav class="nav">
-    <div class="container">
-      <a href="index.html" class="nav-logo">the <span class="craft">craft</span> group</a>
-      <div class="nav-links" id="navLinks">
-        <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
-        <a href="about.html">About</a>
-        <a href="companies.html">Companies</a>
-        <a href="careers.html">Careers</a>
-        <a href="partner.html">Partner</a>
-        <a href="contact.html" class="active">Contact</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="hero-contact.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <span class="tag">Contact</span>
-      <h1>Let's Talk</h1>
-      <p>Whether you're interested in a career, a partnership, or just want to know more — drop us a line.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="two-col">
-        <div>
-          <h2 style="margin-bottom:1.5rem">Get in Touch</h2>
-          <div class="benefit" style="margin-bottom:2rem">
-            <div class="benefit-icon">📧</div>
-            <div>
-              <h4>Email</h4>
-              <p><a href="mailto:info@thecraft.group">info@thecraft.group</a></p>
-            </div>
-          </div>
-          <div class="benefit" style="margin-bottom:2rem">
-            <div class="benefit-icon">⚡</div>
-            <div>
-              <h4>Craft Electric</h4>
-              <p>Calgary, Alberta<br><a href="https://craftelectric.ca" target="_blank">craftelectric.ca</a></p>
-            </div>
-          </div>
-          <div class="benefit" style="margin-bottom:2rem">
-            <div class="benefit-icon">🌿</div>
-            <div>
-              <h4>Brink Landscaping</h4>
-              <p>Vernon, British Columbia<br><a href="https://brinklandscaping.com" target="_blank">brinklandscaping.com</a></p>
-            </div>
-          </div>
-          <div style="background:var(--light);border-radius:var(--radius);padding:1.5rem;margin-top:1rem">
-            <h4 style="margin-bottom:.5rem">Response Time</h4>
-            <p style="color:var(--gray);margin:0">We typically respond within one business day. If your inquiry is about a business partnership, we'll ensure complete confidentiality.</p>
-          </div>
-        </div>
-        <div>
-          <div class="form-card" style="max-width:none">
-            <h3 style="margin-bottom:1.5rem">Send Us a Message</h3>
-            <form action="https://formspree.io/f/placeholder" method="POST">
-              <div class="grid-2">
-                <div class="form-group">
-                  <label for="contactName">Name</label>
-                  <input type="text" id="contactName" name="name" required placeholder="Your name">
-                </div>
-                <div class="form-group">
-                  <label for="contactEmail">Email</label>
-                  <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="contactSubject">What's This About?</label>
-                <select id="contactSubject" name="subject" required>
-                  <option value="">Select one</option>
-                  <option value="career">I'm interested in a career</option>
-                  <option value="partnership">I'm a business owner exploring a partnership</option>
-                  <option value="service">I need electrical or landscaping services</option>
-                  <option value="media">Media or press inquiry</option>
-                  <option value="other">Something else</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="contactPhone">Phone (Optional)</label>
-                <input type="tel" id="contactPhone" name="phone" placeholder="(555) 123-4567">
-              </div>
-              <div class="form-group">
-                <label for="contactMessage">Message</label>
-                <textarea id="contactMessage" name="message" required placeholder="Tell us what's on your mind."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-band">
-    <div class="container">
-      <h2>Looking for Something Specific?</h2>
-      <div class="btn-group center" style="margin-top:1.5rem">
-        <a href="careers.html" class="btn">View Open Positions</a>
-        <a href="partner.html" class="btn" style="background:transparent;border-color:#fff;color:#fff">Partnership Inquiry</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="nav-logo" style="margin-bottom:1rem;color:#fff;font-size:1.8rem">the <span class="craft" style="color:var(--primary)">craft</span> group</div>
-          <p>Building the future of skilled trades across Canada.</p>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="companies.html">Our Companies</a></li><li><a href="careers.html">Careers</a></li><li><a href="partner.html">Partner With Us</a></li></ul>
-        </div>
-        <div>
-          <h4>Our Businesses</h4>
-          <ul class="footer-links"><li><a href="https://craftelectric.ca" target="_blank">Craft Electric</a></li><li><a href="https://brinklandscaping.com" target="_blank">Brink Landscaping</a></li></ul>
-        </div>
-        <div>
-          <h4>Get in Touch</h4>
-          <ul class="footer-links"><li><a href="contact.html">Contact Us</a></li><li><a href="mailto:info@thecraft.group">info@thecraft.group</a></li></ul>
-        </div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2026 The Craft Group. All rights reserved.</p></div>
-    </div>
-  </footer>
-
-  <script>
-    const toggle=document.getElementById('navToggle');const links=document.getElementById('navLinks');const close=document.getElementById('navClose');
-    toggle.addEventListener('click',()=>links.classList.add('open'));close.addEventListener('click',()=>links.classList.remove('open'));
-    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-    // Pre-fill subject from URL param
-    const params=new URLSearchParams(window.location.search);
-    if(params.get('role')){
-      const subj=document.getElementById('contactSubject');
-      subj.value='career';
-      const msg=document.getElementById('contactMessage');
-      msg.value='I\'m interested in the '+params.get('role').replace(/-/g,' ')+' position.';
-    }
-  </script>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="contact.jsx"></script>
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(<Contact />);
+</script>
 </body>
 </html>

@@ -1,243 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-  <title>The Craft Group — Where Craftsmen Become Owners</title>
-  <meta name="description" content="The Craft Group backs ambitious tradespeople who want to own what they build. We provide the infrastructure, AI-driven ops, and back office — you focus on the craft.">
-  <meta property="og:title" content="The Craft Group — Where Craftsmen Become Owners">
-  <meta property="og:description" content="We back ambitious tradespeople who want to own what they build. Infrastructure, AI-driven ops, and equity for real craftsmen.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thecraft.group">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "The Craft Group",
-    "url": "https://thecraft.group",
-    "email": "info@thecraft.group",
-    "founder": {
-      "@type": "Person",
-      "name": "Danny Vass"
-    },
-    "description": "The Craft Group backs ambitious tradespeople who want to own what they build. We acquire service businesses, develop talent, and create paths to ownership — powered by AI-driven operations.",
-    "subOrganization": [
-      {"@type": "Organization", "name": "Craft Electric", "url": "https://craftelectric.ca"},
-      {"@type": "Organization", "name": "Brink Landscaping", "url": "https://brinklandscaping.com"}
-    ]
-  }
-  </script>
+<meta charset="utf-8" />
+<title>The Craft Group — Where Craftsmen Become Owners</title>
+<meta name="description" content="The Craft Group backs ambitious tradespeople who want to own what they build. Trade first. Technology that supports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #1a1814; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  a:hover { opacity: 0.85; transition: opacity 0.2s ease; }
+</style>
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container">
-      <a href="index.html" class="nav-logo">the <span class="craft">craft</span> group</a>
-      <div class="nav-links" id="navLinks">
-        <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
-        <a href="about.html">About</a>
-        <a href="companies.html">Companies</a>
-        <a href="careers.html">Careers</a>
-        <a href="partner.html">Partner</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="hero-home.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <span class="tag">Where Craftsmen Become Owners</span>
-      <h1><span style="color:var(--primary)">Your Craft.</span><br><span style="color:var(--primary)">Your Business.</span><br><span style="color:#fff">Our Technology.</span></h1>
-      <p>We back ambitious tradespeople who want to turn their skill into something they own. The Craft Group provides the infrastructure, the back office, and the AI-driven systems — so you can focus on the work, run your crew, and build real equity in a business with your name on it.</p>
-      <div class="btn-group">
-        <a href="careers.html" class="btn btn-primary">I Want to Build Something</a>
-        <a href="partner.html" class="btn btn-outline">I Own a Business</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT WE DO -->
-  <section class="section">
-    <div class="container text-center">
-      <span class="tag">What We Do</span>
-      <h2>We Build Businesses Around Real Craftsmen</h2>
-      <p class="subtitle">Most trade companies treat skilled workers like employees forever. We think the best people should own what they build. The Craft Group is the infrastructure that makes that possible.</p>
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-icon">🔥</div>
-          <h3>Find Ambitious People</h3>
-          <p>We recruit tradespeople who see their work as a craft — not just a job. People who want to master their trade, lead a crew, and eventually own a piece of something real.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🏗️</div>
-          <h3>Give Them a Business to Run</h3>
-          <p>We acquire established service companies and develop the talent inside them. When someone's ready, we sell them equity in the business they run. Real ownership, not a title.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">⚙️</div>
-          <h3>Handle Everything Else</h3>
-          <p>Bookkeeping, marketing, hiring, AI-driven scheduling and ops — we run the back office so our operators can focus on doing great work and leading their teams.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OUR COMPANIES -->
-  <section class="section bg-light">
-    <div class="container text-center">
-      <span class="tag">Our Companies</span>
-      <h2>The Businesses Behind the Group</h2>
-      <p class="subtitle">Each company in our portfolio operates independently with its own brand and team — backed by the resources and support of The Craft Group.</p>
-      <div class="grid-2">
-        <div class="company-card brand-craft-electric">
-          <img src="craft-electric-logo.png" alt="Craft Electric" class="company-logo">
-          <div class="company-location">Calgary, Alberta</div>
-          <p>Full-service electrical contracting for residential and commercial projects. Licensed journeymen, honest pricing, and work done right the first time.</p>
-          <a href="https://craftelectric.ca" target="_blank" class="btn btn-outline-dark">Visit Craft Electric →</a>
-        </div>
-        <div class="company-card brand-brink">
-          <img src="brink-wordmark.png" alt="Brink Landscaping" class="company-logo-brink">
-          <div class="company-location">Vernon, Okanagan, BC</div>
-          <p>Professional landscaping services in the Okanagan — from design and installation to seasonal maintenance. Built on craftsmanship and client trust.</p>
-          <a href="https://brinklandscaping.com" target="_blank" class="btn btn-outline-dark">Visit Brink Landscaping →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY THE CRAFT GROUP -->
-  <section class="section">
-    <div class="container">
-      <div class="text-center" style="margin-bottom:3rem">
-        <span class="tag">The Path</span>
-        <h2>From Craftsman to Owner</h2>
-      </div>
-      <div class="grid-2">
-        <div>
-          <h3 style="margin-bottom:1.5rem">For Ambitious Tradespeople</h3>
-          <div class="benefit">
-            <div class="benefit-icon">🔥</div>
-            <div><h4>Ownership, Not Just a Paycheque</h4><p>We don't just hire you — we develop you. When you're ready, you buy equity in the business you run. Your name, your crew, your upside.</p></div>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">⚙️</div>
-            <div><h4>AI-Powered Back Office</h4><p>Scheduling, invoicing, marketing, bookkeeping — our systems handle the stuff that buries most small operators. You focus on the craft and the crew.</p></div>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">📈</div>
-            <div><h4>A Real Path Up</h4><p>Start as a skilled worker. Lead a crew. Run a branch. Own a business. We build the ladder — you climb it as fast as you want.</p></div>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">💰</div>
-            <div><h4>Make More Money</h4><p>Owners earn more than employees. Period. We back people who want to bet on themselves and give them the infrastructure to win.</p></div>
-          </div>
-        </div>
-        <div>
-          <h3 style="margin-bottom:1.5rem">For Business Owners Ready to Exit</h3>
-          <div class="benefit">
-            <div class="benefit-icon">🔒</div>
-            <div><h4>Your Legacy, Protected</h4><p>We keep your brand, your team, and the reputation you built. We develop your young talent into the next generation of owners.</p></div>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">📋</div>
-            <div><h4>Clean, Simple Process</h4><p>No private equity games. Straightforward conversations, fair valuations, and a process that respects your time.</p></div>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">🚀</div>
-            <div><h4>Your People Get a Future</h4><p>The best people in your company won't just keep their jobs — they'll get a shot at ownership. That's a legacy worth leaving.</p></div>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">🤝</div>
-            <div><h4>Flexible Transitions</h4><p>Whether you want to walk away or stay involved, we structure the deal around what works for you.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BY THE NUMBERS -->
-  <section class="section bg-dark">
-    <div class="container text-center">
-      <span class="tag">The Network</span>
-      <h2>Building Across Canada</h2>
-      <div class="stats" style="margin-top:2.5rem">
-        <div><div class="stat-number">2</div><div class="stat-label">Operating Companies</div></div>
-        <div><div class="stat-number">2</div><div class="stat-label">Provinces</div></div>
-        <div><div class="stat-number">20+</div><div class="stat-label">Craftsmen</div></div>
-        <div><div class="stat-number">∞</div><div class="stat-label">Room to Grow</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-band">
-    <div class="container">
-      <h2>Ready to Own Your Craft?</h2>
-      <p>Whether you're a tradesperson who wants to build something of your own, or a business owner thinking about what's next — let's talk.</p>
-      <div class="btn-group center">
-        <a href="careers.html" class="btn">I'm a Craftsman</a>
-        <a href="partner.html" class="btn" style="background:transparent;border-color:#fff;color:#fff">I Own a Business</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="nav-logo" style="margin-bottom:1rem;color:#fff;font-size:1.8rem">the <span class="craft" style="color:var(--primary)">craft</span> group</div>
-          <p>Building the future of skilled trades across Canada. Great businesses, great people, great work.</p>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="companies.html">Our Companies</a></li>
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="partner.html">Partner With Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Our Businesses</h4>
-          <ul class="footer-links">
-            <li><a href="https://craftelectric.ca" target="_blank">Craft Electric</a></li>
-            <li><a href="https://brinklandscaping.com" target="_blank">Brink Landscaping</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get in Touch</h4>
-          <ul class="footer-links">
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="mailto:info@thecraft.group">info@thecraft.group</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 The Craft Group. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const toggle=document.getElementById('navToggle');
-    const links=document.getElementById('navLinks');
-    const close=document.getElementById('navClose');
-    toggle.addEventListener('click',()=>links.classList.add('open'));
-    close.addEventListener('click',()=>links.classList.remove('open'));
-    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-  </script>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="shared.jsx"></script>
+<script type="text/babel" src="home.jsx"></script>
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(<Home />);
+</script>
 </body>
 </html>
